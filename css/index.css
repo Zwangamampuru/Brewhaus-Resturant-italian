@@ -234,3 +234,19 @@ footer{
     background-color: rgb(196, 116, 18);
     /* Pause the bounce while hovered so it feels intentional */
 }
+
+
+@media (max-width: 700px) {
+    .about .people {
+        grid-template-columns: 1fr;   /* stack vertically on phones */
+    }
+    .about .time {
+        grid-template-columns: 1fr;   /* stack starting/closing time too */
+    }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+    .about .people {
+        grid-template-columns: 1fr 1fr;   /* two columns on tablets */
+    }
+}
