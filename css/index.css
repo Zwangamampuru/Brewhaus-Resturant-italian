@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primary-color:#3b82f6;
+    --bg-color: rgba(219, 172, 83, 0.671);
+     --clay: #9b6b5c;
+      --deep-forest: #1e3a2f;
+      --cream: #faf6f0;
+      --warm-sand: #e8d9cc;
+      --charcoal: #2b2b2b;
+      --olive: #5b6e4b;
+      --golden: #c49a6c;
+      --white: #ffffff;
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --radius: 1.25rem;
+      --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+    
+}
+html {
+      scroll-behavior: smooth;
+    }
+body{
+   /* background-image : url("../Image Folder/restu.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+     font-family: var(--font-sans);
+      background-color: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+}
+header {
+    border: 1px solid goldenrod;
+    box-shadow: 2px 2px grey;
+    width: 100%;
+    padding: 20px 3.8rem 20px 20px;
+    margin: 0 0 40px;
+    top: 0;
+    position: fixed;
+    background-color: var(--cream);   /* so content doesn't show through when scrolling */
+    z-index: 10;
+}
+
+header nav ol {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    width: 100%;
+    list-style: none;
+}
+
+header nav ol li a {
+    text-decoration: none;
+    color: #bb6a01;
+    font-weight: bolder;
+    transition: color 0.2s ease;
+}
+
+header nav ol li a:hover {
+    color: green;
+}
+header nav ol li a::after {
+    color: red;
+}
+
+
+
+   
+
+.hero{
+    background-image:  linear-gradient(rgba(250, 246, 240, 0.75), rgba(250, 246, 240, 0.75)),
+        url("../Image Folder/ItalianFood.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    margin:100px 0px 100px 0px;
+    text-align:center;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 1.5rem 5rem;
+
+     h1 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      font-size: clamp(2.8rem, 9vw, 5.2rem);
+      line-height: 1.1;
+      color: var(--deep-forest);
+
+    }
+      p {
+      max-width: 65ch;
+      font-style:italic;
+      font-weight: bold;
+      text-align: center;
+    }
+
+}
+main{
+    display: grid;
+    grid-template-columns:  auto;
+    margin: auto;
+}
+.menu{
+    margin: auto;
+    padding: 0;
+    box-shadow: 2px 2px  10px grey;
+     h3 {
+      font-weight: 600;
+      font-size: 1.2rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: var(--clay);
+    }
+      p {
+      max-width: 65ch;
+    }
+
+
+.starters{
+    margin: 20px;
+    border-bottom: 2px solid goldenrod ;
+    text-align: center;
+    padding:1.2rem;
+    img{
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+    }
+}
+.mains{
+    margin: 20px;
+   border-bottom: 2px solid goldenrod;
+    text-align: center;
+    padding:1.2rem;
+
+    img{
+        width: 200px;
+        height: 200px;
+        margin: center;
+    }
+}
+.desserts{
+    margin: 20px;
+    border-bottom: 2px solid goldenrod;
+    text-align: center;
+    padding:1.2rem;
+
+    img{
+        width: 200px;
+        height: 200px;
+        margin: center;
+    }
+}
+
+}
+.about{
+    background: linear-gradient(rgba(226, 206, 138, 0.7), rgba(69, 70, 41, 0.7)),
+        url("../Image Folder/restu.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+         justify-content: center;
+       margin:50px 0px 50px 0px;
+        text-align: center;
+         border-top: 1px solid var(--golden);
+        border-bottom: 1px solid var(--golden);
+        
+        color: var(--charcoal);
+        
+         padding: 3rem 1rem;
+   
+    overflow: hidden;
+       
+    .people{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 20px;
+         .manager{
+            margin: 10px;
+         }
+        .head-chief{
+              margin: 10px;
+        }
+        .owner{
+              margin: 10px;
+        }
+        h5{
+            font-family: var(--font-serif);
+        }
+    }
+    .time{
+        
+        justify-content: center;
+        text-align: center;
+        border-top: 1px solid var(--golden);
+        border-bottom: 1px solid var(--golden);
+        padding: 10px;
+        gap:20px;
+           display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+footer{
+    text-align: center;
+    justify-content: center;
+}
+.btn {
+    padding: 10px;
+    font-weight: bolder;
+    color: var(--golden);
+    background-color: rgb(216, 134, 28);
+    border-radius: 3rem;
+    width: 200px;
+    cursor: pointer;
+    /* NEW: animation */
+    animation: bounce 1s ease-in-out infinite;
+    /* Smooth transition when hovered */
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: rgb(196, 116, 18);
+    /* Pause the bounce while hovered so it feels intentional */
+}
