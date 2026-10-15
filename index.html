@@ -1,158 +1,133 @@
-
+Here is a modern, attractive redesign of your restaurant website. It keeps all your content but restructures the layout, improves typography, adds subtle animations, and creates a cohesive, upscale Italian dining experience.
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brewhause Restaurant</title>
+    <title>Brewhause Restaurant · Modern Italian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
 </head>
-    <body>
-    
-        <!--HEADER  -->
-        <header>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
             <nav>
-                    <ol>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">Menu</a></li>
-                        <li><a href="index.html">About</a></li>
-                    </ol>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Menu</a></li>
+                    <li><a href="index.html">About</a></li>
+                </ol>
             </nav>
-        </header>
-                         <!--- heading--->
-                    <!---hero section-->
-         <section class="hero">
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
             <h1>Brewhause Restaurant</h1>
-                 <center>
-                <p><b>WELCOME TO Brewhause <br> A taste of Italy, one bite at a time.</br></b></p>
-                <p>
-                    <br>
-                    Fresh pasta. Wood-fired pizza. Natural wines. Brewhause Restaurant <br>reimagines classic Italian cuisine with a modern twist — bold flavors, </br> beautiful plating, and an atmosphere that feels like dinner at a friend's place in Rome
-                </p>
-               
+            <p class="tagline">A taste of Italy, one bite at a time.</p>
+            <p class="welcome-text">
+                Fresh pasta. Wood-fired pizza. Natural wines. Brewhause Restaurant 
+                reimagines classic Italian cuisine with a modern twist — bold flavors, 
+                beautiful plating, and an atmosphere that feels like dinner at a friend's place in Rome.
+            </p>
 
-                     <h3>Reservations</h3>
-          <h2 id="reservation-heading">Join us at the table</h2>
-          <p>
-            We release tables 30 days in advance. For parties of 6 or more,
-            please call us directly — we'll take care of you.
-          </p>
-          <!-- main CTA button (real action) -->
-           <form action="#" method="post">
+            <h2>Join us at the table</h2>
+            <p class="reservation-note">
+                We release tables 30 days in advance. For parties of 6 or more, 
+                please call us directly — we'll take care of you.
+            </p>
 
-          <button  class="btn" role="button" aria-label="Book a reservation online">Book your table</button>
-          </form>
-          <p style="font-size: 0.9rem; opacity: 0.85; margin-top: 0.2rem;">
-            or call (555) 347‑2634 · daily from 10am
-          </p>
-                </center>
-                    
-            </section>
-    
-             <main>
-       
-                                 <section class="menu">
+            <form action="#" method="post" style="display: inline-block;">
+                <button class="btn" role="button" aria-label="Book a reservation online">Book your table</button>
+            </form>
+            <p class="phone">or call (555) 347‑2634 · daily from 10am</p>
+        </div>
+    </section>
 
-                                        <div class="starters">
-                                            <img src="./Image Folder/starters (2).jpeg" alt="starters"/>
-                                             <h3> Tomato Bruschetta</h3>
-                                            <p>Crispy toasted bread topped with fresh diced tomatoes ,aromatic herbs
-                                                 and delicate microgreens,served on a bed of fresh greens for a light 
-                                                 and flavourful beginning to your meal
-                                            </p>
-                                    </div>
-
-                                    <div class="mains">
-                                       
-                                        <img src="./Image Folder/mains.jpeg" alt="mains"/>
-                                        
-                                        <h3>Grilled Chicken with Seasonal Vegetables</h3>
-                                        <p> 
-                                            Tender, perfectly grilled chicken served with seasonal vegetables and creamy 
-                                            mashed potatoes, finished with a rich, savoury sauce for a satisfying 
-                                            dining experience.
-
-                                        </p>
-                                    </div>
-
-                                    <div class="desserts">
-
-                                        <img src="./Image Folder/desserts.jpeg" alt="dessert"/>
-                                             <h3>Chocolate Lava Cake</h3>
-                                                 <p> 
-                                                    A rich, warm chocolate cake with a soft, molten centre , served with creamy
-                                                     vanilla ice cream, fresh berries, and a dizzled of sweet berry  sauce
-                                                 </p>
-
-                                    </div>
-
-                    </section>
-
-                  
-              </main>
-                <div class="about">
-                       <center>
-
-                       <h2>
-                        ABOUT US
-                       </h2>
-                    </center>
-                        <div class="people">
-                            <div class="owner">
-                                <h4>Leonardo D'Angelo </h4>
-                                <p>
-                                    "Service is the technical delivery of a product.<br>
-                                     Hospitality is how the delivery of that product <br>
-                                     makes the recipient feel."
-                                </p>
-
-                                <h5>Owner</h5>
-
-                            </div>
-                             <div class="manager">
-                                <h4>Mattia Bonetii</h4>
-                                <p>
-                                    "Good food is very often, even most <br>
-                                    often, simple food."
-                                </p>
-
-                                <h5>Manager</h5>
-                            </div>
-                             <div class ="head-chief">
-                                <h4>Francesco Ricci</h4>
-                                <p>
-                                    "Cooking is like painting or writing a song. <br>
-                                    Just as there are only so many notes or colors,<br>
-                                     there are only  so many flavors—it's <br>
-                                     how you combine them that sets you apart"
-                                </p>
-                                <h5>Head Chief</h5>
-                            </div>
+    <!-- MENU -->
+    <main>
+        <section class="menu-section">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <div class="menu-grid">
+                    <!-- Starter -->
+                    <div class="menu-item">
+                        <img src="./Image Folder/starters (2).jpeg" alt="Tomato Bruschetta">
+                        <div class="menu-item-content">
+                            <h3>Tomato Bruschetta</h3>
+                            <p>Crispy toasted bread topped with fresh diced tomatoes, aromatic herbs and delicate microgreens, served on a bed of fresh greens for a light and flavourful beginning to your meal.</p>
                         </div>
-                        <div class="address">
-                           
-                            <div class="time">
-                                <span>
-                                <h4>Starting Time</h4>
-                                <p>09H00</p>
-                            </span>
-                                <span>
-                                <h4>Closing time</h4>
-                                <p>21H00</p>
-                                </span>
-                                
-                            </div>
-                        </div>
-                        
-
                     </div>
+                    <!-- Main -->
+                    <div class="menu-item">
+                        <img src="./Image Folder/mains.jpeg" alt="Grilled Chicken with Seasonal Vegetables">
+                        <div class="menu-item-content">
+                            <h3>Grilled Chicken</h3>
+                            <p>Tender, perfectly grilled chicken served with seasonal vegetables and creamy mashed potatoes, finished with a rich, savoury sauce for a satisfying dining experience.</p>
+                        </div>
+                    </div>
+                    <!-- Dessert -->
+                    <div class="menu-item">
+                        <img src="./Image Folder/desserts.jpeg" alt="Chocolate Lava Cake">
+                        <div class="menu-item-content">
+                            <h3>Chocolate Lava Cake</h3>
+                            <p>A rich, warm chocolate cake with a soft, molten centre, served with creamy vanilla ice cream, fresh berries, and a drizzle of sweet berry sauce.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-             <footer>
-                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">del Ponte Pisano 84, Rome (Roma Capitale), 00163</p>
-         <p>© 2025 Harvest & Hearth · all rights reserved</p>
-        <p style="font-size: 0.8rem; opacity: 0.7;">seasonal · local · wood‑fired</p>
+    <!-- ABOUT -->
+    <div class="about">
+        <div class="container">
+            <h2>About Us</h2>
+
+            <div class="people">
+                <div class="person">
+                    <h4>Leonardo D'Angelo</h4>
+                    <p>"Service is the technical delivery of a product. Hospitality is how the delivery of that product makes the recipient feel."</p>
+                    <h5>Owner</h5>
+                </div>
+                <div class="person">
+                    <h4>Mattia Bonetii</h4>
+                    <p>"Good food is very often, even most often, simple food."</p>
+                    <h5>Manager</h5>
+                </div>
+                <div class="person">
+                    <h4>Francesco Ricci</h4>
+                    <p>"Cooking is like painting or writing a song. Just as there are only so many notes or colors, there are only so many flavors — it's how you combine them that sets you apart."</p>
+                    <h5>Head Chef</h5>
+                </div>
+            </div>
+
+            <div class="time-info">
+                <span>
+                    <h4>Starting Time</h4>
+                    <p>09:00</p>
+                </span>
+                <span>
+                    <h4>Closing Time</h4>
+                    <p>21:00</p>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>del Ponte Pisano 84, Rome (Roma Capitale), 00163</p>
+        <p>© 2025 Harvest &amp; Hearth · all rights reserved</p>
+        <p>seasonal · local · wood‑fired</p>
     </footer>
-    </body
-    
-        
+
+</body>
 </html>
+```
